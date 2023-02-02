@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Normalize CSS -->
+   <!--<link rel="stylesheet" type="text/css" href="normalize.css">-->
+
+    <title>Formulario</title>
+</head>
+<body>
+    <div class="container">
+		<div class="topo">
+
+			<div class="area-logo">
+				<h1 class="logo">
+					<a href="index.html">Chalé Hotel</a> 
+				</h1>
+            </div>
+    <div class="area-menu">
+			<div class="conteudo-menu">
+				<div id="menu-locais">
+					<span class="locais">
+						Rio de Janeiro - São Paulo - Belo Horizonte
+					</span>
+					<a class="reserva" href="formulario.html">Reservar</a>
+					<div style="clear: both;"></div>
+                    </div>
+        <div class="menu">
+				<ul class="navegacao">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="servicos.html">Acomodação</a></li>
+					<li><a href="formulario.html">Contato</a></li>
+					</ul>
+
+						<img class="depoimento" src="depoimento.png">
+					</div>
+				</div>
+			</div>
+		
+
+        </div>
+        <div class="area-principal">
+			<div class="conteudo">
+				<div id="form">
+                    <div>
+                           <h2>Reservas</h2>
+                           <h2>Dados do Hóspede</h2>
+                           
+                       </div>
+                   <form name="exemplo" method="post" action="">
+                       <fieldset class="grupo">
+                           <div class="campo">
+                               <label for="nome"><strong>Nome</strong></label>
+                               <input type="text" name="nome" id="nome" required>
+                           </div>
+               <fieldset class="grupo">
+                           <div class="campo">
+                               <label for="endereco"><strong>Endereco</strong></label>
+                               <input type="text" name="endereco" id="endereco" required>
+                           </div>
+                       
+               </fieldset>
+                      
+               
+               <fieldset class="grupo">
+                   <div class="campo">
+                       <label for="cidade"><strong>Cidade</strong></label>
+                       <input type="text" name="cidade" id="cidade" required>
+                   </div>
+               
+                   <div class="campo">
+                       <label for="estado"><strong>Estado</strong></label>
+                       <select id="estado" required>
+                         <option selected disabled value="">Selecione</option>
+                           <option value="AC">Acre
+                           <option value="AL">Alagoas
+                           <option value="AP">Amapá
+                           <option value="AM">Amazonas
+                           <option value="BA">Bahia
+                           <option value="CE">Ceará
+                           <option value="ES">Espirito Santo     
+                           <option value="GO">Goiás 
+                           <option value="MA">Maranhão
+                           <option value="MT">Mato Grosso
+                           <option value="MS">Mato Grosso do Sul
+                           <option value="PA">Pará
+                           <option value="PB">Paraíba
+                           <option value="PR">Parana 
+                           <option value="PE">Pernambuco
+                           <option value="PI">Piauí
+                           <option value="RJ">Rio de Janeiro
+                           <option value="RN">Rio Grande do Norte
+                           <option value="RS">Rio Grande do Sul
+                           <option value="RO">Rondônia
+                           <option value="RR">Roraima      
+                           <option value="SC">Santa Catarina 
+                           <option value="SP">São Paulo
+                           <option value="SE">Sergipe
+                           <option value="TO">Tocantins
+                           <option value="DF">Distrito Federal             
+                   </select> 
+                   </div>
+               </fieldset> 
+                   <fieldset class="grupo">
+                   <div class="campo">
+                   <label for="CEP"><strong>CEP</strong></label>   
+                   <input type="text" name="CEP" id="CEP"> 
+                   </div>
+                   <div class="campo">
+                    <label for="email"><strong>Email</strong></label>    
+                    <input type ="email" name="Email" id="Email" >
+                    </div>    
+                   </fieldset>
+                   <fieldset class="grupo">
+                   <div class="campo"> 
+                   <label for="fone"><strong>Fone</strong></label>   
+                   <input type="text" name="fone" id="fone">
+                   </div>
+                   </fieldset>
+                   <fieldset class="grupo">
+                    <div class="campo">
+                    <label for="sexo"><strong>Sexo</strong></label>   
+                    <input type="radio" name="Sexo" id="Sexo" value="Ms">Masculino
+                    <input type="radio" name="Sexo" id="Sexo" value="Fm">Feminino
+                    <input type="radio" name="Sexo" id="Sexo" value="Ot">Outros
+                    </div>
+                   </fieldset>    
+                   <h2>Dados da Hospedagem</h2>
+                   <fieldset class="grupo">
+                   <div class="campo">
+                   <label for="Evento"><strong>Viajando a:</strong></label>
+                   <input type="radio" name="Viajando" id="Viajando" value="Tb">Trabalho
+                   <input type="radio" name="Viajando" id="Viajando" value="Lz">Lazer
+                   <input type="radio" name="Evento" id="Viajando" value="Es">Estudo
+                   </div>
+                   </fieldset>
+                   <fieldset class="grupo">
+                    <div class="campo">
+                    <label for="data"><strong>Data Check-in</strong></label>
+                    <input type="date" name="data-in" id="data-in">
+                    </div>
+                    <div class="campo">
+                    <label for="time"><strong>Horário Check-in</strong></label>
+                    <input type="time" name="time" id="time">
+                    </div>
+                    </fieldset> 
+                    <fieldset class="grupo">
+                        <div class="campo">
+                        <label for="data"><strong>Data Check-out</strong></label>
+                        <input type="date" name="data-out" id="data-out">
+                        </div>
+                        <div class="campo">
+                        <label for="time"><strong>Horário Check-out</strong></label>
+                        <input type="time" name="time-out" id="time-out">
+                        </div>
+                        </fieldset> 
+                    <fieldset class="grupo">
+                        <div class="campo">
+                        <label for="adicionais"><strong>Tipo Quarto</strong></label>    
+                        <input type="checkbox" name="individual" value="individual" value="I"> Individual
+                        <input type="checkbox" name="duplo" id="duplo" value="D"> Duplo
+                        <input type="checkbox" name="triplex" id="triplex" value="T"> Triplex  
+                        </div>
+                    </fieldset> 
+                  <fieldset class="grupo">
+                   <div class="campo">
+                    <label for="adulto"><strong>Nr Adultos</strong></label>
+                    <select name="adulto" id="adulto">
+                     <option selected disabled value="">Selecione</option>
+                    <option value="1">1 Adulto(s)
+                    <option value="2">2 Adulto(s)
+                    <option value="3">3 Adulto(s)   
+                    </select>  
+                    </div>
+                    <div class="campo">
+                        <label for="crianca"><strong>Nr Crianças</strong></label>
+                        <select name="crianca" id="crianca">
+                         <option selected disabled value="">Selecione</option>
+                        <option value="1">1 Criança(s)
+                        <option value="2">2 Criança(s)
+                        <option value="3">3 Criança(s)    
+                        </select>  
+                        </div>
+                  </fieldset>
+                  <fieldset class="grupo">
+                    <div class="campo">
+                        <label for="adicionais"><strong>Serviços Inclusos</strong></label>    
+                        <input type="checkbox" name="cafe" id="cafe" value="C">Café da Manhã
+                        <input type="checkbox" name="almoco" id="almoco" value="A">Almoço
+                        <input type="checkbox" name="jantar" id="jantar" value="J">Jantar  
+                        </select>
+                        </div>
+                   </fieldset> 
+                <fieldset class="grupo">   
+                <div class="campo">
+                   <label for="botao">
+                   <input type="submit" name="enviar" id="enviar" value="Enviar">
+                   <input type="reset"  name="limpar" id="limpar" value="Limpar">
+                   </label>
+                </div>
+                </fieldset>
+            </div>   
+            </form> 
+                
+			</div>
+		</div>
+        <div class="area-lateral">
+			<div class="conteudo">
+
+				<ul class="beneficios">
+								<li>
+									<a href="">
+										<img src="apartamento.jpg" width="150" alt="Apartamento">
+										<h3>Apartamento</h3>
+										<p>
+                                            Possuimos uma enorme quantidade de quartos, todos eles são equipados com Smart TV, ar condicionado, frigobar e etc.
+										</p>
+									</a>
+								</li>
+
+								<li>
+									<a href="">
+										<img src="restaurante.jpg" width="150" align="Restaurante"> 
+										<h3>Restaurante</h3>
+										<p>
+                                            No nosso restaurante, possuimos café da manha gratuitamente, e no horario do almoço um buffet com uma grande variedade de comidas.
+										</p>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="piscina.jpg" width="150" alt="Piscina">
+										<h3>Piscina</h3>
+
+										<p>
+                                            Possuimos no total 5 piscinas, 2 delas cobertas e com aquecedor, 2 na parte de fora do hotel e 1 infantil.
+										</p>
+									</a>
+								</li>
+							</ul>
+			</div>
+		</div>
+       <footer class="rodape">
+        <span>
+            Site desenvolvido por Nicolas Freitas
+        </span>
+    </footer>
+    
+</div>
+
+</body>
+</html>
